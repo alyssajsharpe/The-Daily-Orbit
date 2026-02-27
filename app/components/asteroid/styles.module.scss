@@ -1,0 +1,121 @@
+.introContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+     
+    .buttonWrapper {
+      width: 100%;
+
+      .button {
+        display: block;
+        margin: auto;
+        width: 200px;
+        text-align: center;
+        background: linear-gradient(90deg, var(--primary), #8888ff);
+
+          @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+
+
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left !important;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+ 
+    .card {
+      padding: 20px;
+      border-radius: 16px;
+      width: 24.4%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+      transition: box-shadow .18s border-color .18s;
+    }
+  }
+
+   .column2 {
+    width: 100%;
+    margin-bottom: 12px;
+
+    @media screen and (max-width: 768px) {
+        overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+   }
+}
+
+
+
+// Table
+.asteroidTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  color: #fff;
+  background: #0d0d1a;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 600px; 
+  height: max-content;
+}
+
+.asteroidTable th,
+.asteroidTable td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.asteroidTable thead {
+  background: linear-gradient(90deg, var(--primary), #8888ff);
+}
+
+.asteroidTable tbody tr {
+  border-bottom: 1px solid #333;
+  transition: background 0.2s;
+}
+
+.asteroidTable tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.asteroidTable a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.asteroidTable a:hover {
+  color: #ffcc00;
+}
+
+// Pagination 
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination button {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background: linear-gradient(90deg,  var(--primary), #8888ff);
+  color: #fff;
+}

@@ -1,0 +1,39 @@
+.introContainer {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .column1 {
+    text-align: left !important;
+    width: 50%;
+
+     @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+  }
+
+   .column2 {
+    width: 50%;
+     @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    h3 {
+      font-style: italic;
+    }
+
+    p {
+      padding-bottom: 12px;
+    }
+  }
+}

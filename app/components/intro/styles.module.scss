@@ -1,0 +1,51 @@
+
+.introContainer {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  
+  }
+
+  .column1 {
+    text-align: left !important;
+    width: 70%;
+
+     @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    .buttonWrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    }
+  }
+
+   .column2 {
+    width: 30%;
+    display: flex;
+  
+     @media screen and (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+    }
+
+    img {
+       border-radius: 9999px;
+       transition: ease-in-out .3s;
+       
+       &:hover {
+        cursor: pointer;
+        border-radius: 16px;
+        
+       }
+    }
+  }
+}
