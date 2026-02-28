@@ -6,7 +6,7 @@ import introImg from "../../../public/images/rocket.jpg";
 export default function Intro() {
 
   return (
-    <div className={`container ${styles.introContainer}`}>
+    <div id="intro" className={`container ${styles.introContainer}`}>
       <div className={styles.column1}>
         <h2>Explore the Universe, Through The Daily Orbit</h2>
         <p>Welcome to a living window into space. This project pulls real-time data and media from NASA to showcase stunning Astronomy Pictures of the Day, stream official mission footage, and track near-Earth asteroids by date.</p>
@@ -23,7 +23,7 @@ export default function Intro() {
             src={introImg}
             alt="Rocket launching from space station"
             width={480}
-            height={360}
+            height={600}
             priority
         />
       </div>

@@ -1,31 +1,7 @@
-.embla {
-  overflow: hidden;
+.carouselContainer {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 
-.embla__container {
-  display: flex;
-}
-
-.embla__slide {
-  position: relative;
-  min-width: 100%;
-  overflow: hidden;
-}
-
-.embla__parallax {
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-}
-
-.embla__parallax__layer {
-  height: 100%;
-  width: 120%; // wider so it can move
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  background: linear-gradient(45deg, #1e1e2f, #2c2c54);
-  color: white;
-  will-change: transform;
-}

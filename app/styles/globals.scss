@@ -138,6 +138,7 @@ a {
   padding: 12px 24px;
   border-radius: 8px;
   align-content: center;
+  text-align: center;
 }
 
 .primaryButton {
@@ -188,3 +189,29 @@ a {
 @keyframes l17 {
     100% {background-size:120% 100%}
 }
+
+
+// Carousel
+  .slick-slide {
+    padding: 0;           
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-slide img {
+    height: 250px !important;        
+    object-fit:cover; 
+  }
+
+  .slick-track {
+    display: flex;        
+  }
+
+  .slick-list {
+    overflow: hidden;    
+  }
+
+  .slick-dots {
+    bottom: 5px;
+  }

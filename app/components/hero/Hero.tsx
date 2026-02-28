@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useRef } from "react";
-
 import Image from "next/image";
 import styles from './styles.module.scss';
 import logo from "../../../public/images/logo.png"
@@ -29,8 +28,8 @@ export default function Hero() {
     <div ref={heroRef} className={styles.hero}>
       <Image 
         src={logo}
-            alt="Space"
-            width={480}
+            alt="The Daily Orbit Logo"
+            width={400}
             height={400}
             priority
       />
@@ -41,7 +40,7 @@ export default function Hero() {
           playsInline
           preload="auto"
         >
-          <source src="/images/hero.mp4" type="video/mp4" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       <div className={styles.overlay}></div>

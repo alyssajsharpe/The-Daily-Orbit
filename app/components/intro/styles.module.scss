@@ -6,12 +6,11 @@
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-  
   }
 
   .column1 {
     text-align: left !important;
-    width: 70%;
+    //width: 70%;
 
      @media screen and (max-width: 768px) {
       width: 100%;
@@ -22,14 +21,14 @@
       flex-direction: row;
       gap: 16px;
 
-      @media screen and (max-width: 768px) {
-      flex-direction: column;
-    }
+      @media screen and (max-width: 368px) {
+        flex-direction: column;
+      }
     }
   }
 
    .column2 {
-    width: 30%;
+    //width: 30%;
     display: flex;
   
      @media screen and (max-width: 768px) {
@@ -40,11 +39,16 @@
     img {
        border-radius: 9999px;
        transition: ease-in-out .3s;
+       width: auto !important;
+
+       @media screen and (max-width: 375px) {
+        width: 100% !important;
+       }
        
        &:hover {
         cursor: pointer;
         border-radius: 16px;
-        
+
        }
     }
   }
