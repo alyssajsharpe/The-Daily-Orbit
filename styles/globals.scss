@@ -191,6 +191,16 @@ a {
 }
 
 
+// Not Found
+.notFound {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
 // Carousel
   .slick-slide {
     padding: 0;           

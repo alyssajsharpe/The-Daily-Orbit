@@ -17,7 +17,7 @@ export default function Footer() {
                     priority
             />
             <p>Created by Alyssa Sharpe 2026</p>
-            <p>Special thanks to NASA for their insightful APIs and images.</p>
+            <p>Special thanks to NASA for their insightful <a href="https://api.nasa.gov/" target="_blank">APIs</a> and <a href="https://www.nasa.gov/images/" target="_blank">images</a>.</p>
         </div>
          <div className={styles.column2}>
             <a href="#intro">About the project</a>

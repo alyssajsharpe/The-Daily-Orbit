@@ -9,7 +9,6 @@ import Asteroid from './components/asteroid/Asteroid';
 import ImageCarousel from './components/carousel/ImageCarousel';
 import Footer from "./components/footer/footer";
 
-
 export default function Home() {
 
   return (

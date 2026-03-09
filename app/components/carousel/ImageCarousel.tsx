@@ -18,51 +18,49 @@ import img8 from "../../../public/images/space8.jpg";
 
 export default function ImageCarousel(){
      const settings = { 
-      dots: false,
-      infinite: true,
-      speed: 1000,
-      slidesToShow: 3,  
-      slidesToScroll: 1,
-      arrows: true,
-      swipeToSlide: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            arrows: false,
+       className: "center",
+        centerMode: true,
+        infinite: true,
+        centerPadding: "60px",
+        slidesToShow: 3,
+        speed: 500,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              arrows: false,
+            },
           },
-        },
-      ],
+        ],
   };
 
   return (
     <div className={`container ${styles.carouselContainer}`}>
       <Slider {...settings}>
-        <div>
+        <div className={styles.wrapper}>
           <Image src={img1} alt="Slide 1" height={300} width={500} objectFit="cover"/>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <Image src={img2} alt="Slide 2" height={300} width={500} objectFit="cover"/>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <Image src={img3} alt="Slide 3" height={300} width={500} objectFit="cover"/>
         </div>
-        <div>
+        <div className={styles.wrapper}> 
           <Image src={img4} alt="Slide 4" height={300} width={500} objectFit="cover"/>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <Image src={img5} alt="Slide 5" height={300} width={500} objectFit="cover"/>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <Image src={img6} alt="Slide 6" height={300} width={500} objectFit="cover"/>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <Image src={img7} alt="Slide 7" height={300} width={500} objectFit="cover"/>
         </div>
-        <div>
+        <div className={styles.wrapper}>
           <Image src={img8} alt="Slide 8" height={300} width={500} objectFit="cover"/>
         </div>
       </Slider>

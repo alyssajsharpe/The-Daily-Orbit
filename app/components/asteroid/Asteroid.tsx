@@ -68,9 +68,6 @@ export default function Asteroid() {
         fetchPosts()
       }, []);
 
-      console.log("Data: ", nasaData);
-      console.log("asteroids: ", asteroids);
-
     // When user updates the dates, make a new api call
       if(!nasaData) return 
       ( <div className="loader"></div>)
